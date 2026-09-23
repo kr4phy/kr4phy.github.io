@@ -20,7 +20,7 @@ header nav {
     ul li {
       color: white;
 
-      a {
+      a:not(.class) {
         color: skyblue;
       }
     }
