@@ -16,14 +16,6 @@ header nav {
   header nav {
     background: rgba(0, 0, 0, 0.0);
     border: 1px solid rgba(255, 255, 255, 0.2);
-
-    ul li {
-      color: white;
-
-      a:not(.class) {
-        color: skyblue;
-      }
-    }
   }
 }
 
