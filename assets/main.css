@@ -1,0 +1,62 @@
+header nav {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.0);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+  padding: 5px 15px;
+}
+
+@media (prefers-color-scheme: dark) {
+  header nav {
+    background: rgba(0, 0, 0, 0.0);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    ul li {
+      color: white;
+
+      a {
+        color: skyblue;
+      }
+    }
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  bottom: 0px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 15px;
+  margin-top: auto;
+}
+
+.navbar-spacer {
+  height: 50px;
+}
+
+.horizontal-scroll {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.mini-card {
+  min-width: 40%;
+  max-width: 40%;
+  margin: 1rem;
+}

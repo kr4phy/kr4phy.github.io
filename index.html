@@ -2,119 +2,72 @@
 <html lang="en" data-theme="system">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="color-scheme" content="light dark">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <title>kr4phy's website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/assets/main.css">
+  <title>kr4phy's website</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/" class="contrast"><strong>kr4phy.github.io</strong></a></li>
-            </ul>
-            <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="navbar-spacer"></div>
-    <main class="container">
-        <h1>Welcome to my website!</h1>
-        <section id="projects">
-            <h3>Projects</h3>
-            <p>Here are some of my projects:</p>
-            <div class="overflow-auto">
-                <div class="horizontal-scroll">
-                    <article class="mini-card">
-                        <header>
-                            kr4phy.github.io
-                        </header>
-                        My portfolio website. You are currently on it!
-                    </article>
-                    <article class="mini-card">
-                        <header>
-                            ddg-cli
-                        </header>
-                        A lightweight and fast commandline tool for DuckDuckGo search engine written in go.
-                    </article>
-                    <article class="mini-card">
-                        <header>
-                            ddgosearch
-                        </header>
-                        An upgraded version of ddg-cli with more features.
-                    </article>
-                    <article class="mini-card">
-                        <header>
-                            and more...
-                        </header>
-                        <a href="/projects" class="contrast">See more projects</a>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <section id="blog">
-            <h3>Blog</h3>
-            <p>Check out my latest blog posts:</p>
-        </section>
-        <section id="about">
-            <h3>About Me</h3>
-            <p>Hello, I'm kr4phy! I'm a student interested in development and hacking.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 kr4phy. All rights reserved.</p>
-    </footer>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/" class="contrast"><strong>kr4phy.github.io</strong></a></li>
+      </ul>
+      <ul>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="navbar-spacer"></div>
+  <main class="container">
+    <h1>Welcome to my website!</h1>
+    <section id="projects">
+      <h3>Projects</h3>
+      <p>Here are some of my projects:</p>
+      <div class="overflow-auto">
+        <div class="horizontal-scroll">
+          <article class="mini-card">
+            <header>
+              <a href="https://github.com/kr4phy/kr4phy.github.io">kr4phy.github.io</a>
+            </header>
+            <a href="https://github.com/kr4phy/kr4phy.github.io" class="contrast">My portfolio website. You are
+              currently on it!</a>
+          </article>
+          <article class="mini-card">
+            <header>
+              <a href="https://github.com/kr4phy/ddg-cli">ddg-cli</a>
+            </header>
+            <a href="https://github.com/kr4phy/ddg-cli" class="contrast">A lightweight and fast commandline tool for
+              DuckDuckGo search engine written in go.</a>
+          </article>
+          <article class="mini-card">
+            <header>
+              <a href="https://github.com/kr4phy/ddgosearch">ddgosearch</a>
+            </header>
+            <a href="https://github.com/kr4phy/ddgosearch" class="contrast">An upgraded version of ddg-cli with more
+              features.</a>
+          </article>
+          <article class="mini-card">
+            <header>
+              <a href="/projects">and more...</a>
+            </header>
+            <a href="/projects" class="contrast">See more projects</a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <h3>About Me</h3>
+      <p>Hello, I'm kr4phy! I'm a student interested in development and hacking.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 kr4phy. All rights reserved.</p>
+  </footer>
 </body>
-
-<style>
-    header nav {
-        position: fixed;
-        top: 15px;
-        left: 15px;
-        right: 15px;
-        border-radius: 16px;
-        background: rgba(255, 255, 255, 0.6);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
-        padding: 5px 15px;
-    }
-
-    @media (prefers-color-scheme: dark) {
-        header nav {
-            background: rgba(0, 0, 0, 0.6);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-    }
-
-    footer {
-        bottom: 0px;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        padding: 5px 15px;
-    }
-
-    .navbar-spacer {
-        height: 50px;
-    }
-
-    .horizontal-scroll {
-        display: flex;
-        flex-wrap: nowrap;
-    }
-
-    .mini-card {
-        min-width: 40%;
-        max-width: 40%;
-        margin: 1rem;
-    }
-</style>
 
 </html>
